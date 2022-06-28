@@ -99,9 +99,9 @@ start ChromePass.exe /stext stored\ChromePass_%DYNPATHNAME%
 :: 	any user interface.
 :: start BrowsingHistoryView.exe /stext BrowsingHistoryView_%DYNPATHNAME%
 
-start Dialupass.exe /stext stored\ChromePass_%DYNPATHNAME%
+:: start Dialupass.exe /stext stored\ChromePass_%DYNPATHNAME%
 
-start netpass.exe /stext stored\netpass_%DYNPATHNAME%
+:: start netpass.exe /stext stored\netpass_%DYNPATHNAME%
 
 start PstPassword.exe /stext stored\pstpass_%DYNPATHNAME%
 :: End of tool commands
