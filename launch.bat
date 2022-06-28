@@ -6,6 +6,7 @@
 :: Turn off echo printing of tools/commands being run in DOS popup 
 @echo off
 
+mkdir stored
 :: Return fake antivirus program string to reassure user
 :: echo Starting Virus Scan...
 
