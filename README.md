@@ -1,6 +1,6 @@
 # venom derived from BadUSB-browser
 
-Please do not upload this .exe file on Virus Total
+# Please do not upload this .exe file on Virus Total
 
 any improvements are welcomed! 
 
