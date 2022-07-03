@@ -1,26 +1,13 @@
-venom
-===============
+# venom derived from BadUSB-browser
 
-USB / CD / DVD autorun password stealer for Penetration Tests.
+Please do not upload this .exe file on Virus Total
 
-This repo will help you create a proper autorun usb which steals passwords, browser history, along with giving you reverse connection to your attacker machine from the target device where you've plugged in the usb. Code is well documented, feel free to modify for your own personal use.
+any improvements are welcomed! 
 
-Test in a lab environment. Use at your own risk =) 
+For this to work follow these steps
 
-Follow the steps given below
+step 1. upload habrow.ps1 and hackbrowser.exe to your server and add those links in habrow.ps1 and inject.txt at their specified places.
 
-step 1: clone this repo
+step 2. Add smtp and email details in habrow.ps1 file 
 
-step 2: (this step will work in windows) install the autoruncreator.exe in this repo
-
-step 3: once the program is started specify the .bat file in first field and in the second field specify the usb drive which you want to autorun.
-
-passutilities.zip contains older version of nirsoft tools as they work just fine 
-password : nirsoft123!
-
-however the launch.bat won't work if you made changes to the lauch.bat file because the information of .bat file is stored in openfile created after you make your pendrive autorun with autoruncreator. but as windows disabled autorun functionality the launch.bat wont autorun if you don't install autoruncreator.exe in their system. That is the reason rubber ducky exists if you want you can just double click launch.bat and it'll do its work.
-
-launch.bat file should be the exact file when it was selected during the creation of autorun with the program. 
-there is workaround tho if you wanna modify .bat file modify it and make it to autorun with that autoruncreator.exe program this way you can use your own .bat file
-
-If you wish to make this repo better please contribute
+convert inject.txt to payload.dd and paste it to rubber ducky
